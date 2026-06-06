@@ -18,6 +18,12 @@
         <link href="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/css/voicecloudtemplate.webflow.shared.43cd363e2.css" rel="stylesheet" type="text/css" integrity="sha384-Q802Pibs56wVsmH5oGuLYGyqjqhkN1TuENa++DBMxB0oegvu0m700SlOVAu46ecH" crossorigin="anonymous"/>
         <style>
             .w-webflow-badge, .brix-badges-wrapper { display: none !important; }
+            /* Force Webflow IX2 scroll-animation elements visible (no Webflow JS runtime is loaded) */
+            [style*="opacity:0"], [style*="opacity: 0"] { opacity: 1 !important; }
+            [style*="blur"] { filter: none !important; }
+            [data-w-id] { transform: none !important; }
+            /* Hide off-brand template-leftover practice/testimonial brand logos */
+            .card-logo, img[src*='vireon-logo'], img[src*='linkora-logo'], img[src*='converra-logo'], img[src*='nexora-logo'], img[src*='syncell-logo'], img[src*='socium-logo'], img[src*='bridgr-logo'], img[src*='netspire-logo'] { display: none !important; }
             .brand-logo-img { height: 40px; width: auto; display: block; }
             .footer-brand-logo-img { height: 56px; width: auto; display: block; }
         </style>
@@ -145,7 +151,7 @@
                     </div>
                     <div data-w-id="eb8a67ec-0b56-73ac-f6f9-544e4f41cea4" style="opacity:0;filter:blur(8px)" class="mg-top-large">
                         <div data-w-id="090bdbac-4f0a-3cf4-ae13-8301832f0b2b" class="image-wrapper hero-v1-image-wrapper">
-                            <img src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/6961ae134f106d48d32fced8_hero-v1-image-voicecloud-webflow-template.png" loading="eager" width="1902" data-w-id="76e3ee74-3a92-7b9c-31d2-0b8d829e2738" alt="MissFloss.ai product preview" class="image hero-v1-image"/>
+                            <img src="hero-mockup.svg" loading="eager" width="1902" data-w-id="76e3ee74-3a92-7b9c-31d2-0b8d829e2738" alt="MissFloss.ai product preview" class="image hero-v1-image"/>
                         </div>
                     </div>
                 </div>
@@ -180,7 +186,7 @@
                 <div class="w-layout-blockcontainer container-default w-container">
                     <div class="w-layout-grid content-2-columns-grid _1-55fr---1fr">
                         <div id="w-node-_20086297-5b60-f8a6-34ae-24c277b338e7-dde637be" data-w-id="20086297-5b60-f8a6-34ae-24c277b338e7" style="opacity:0;filter:blur(8px)" class="image-wrapper border-image">
-                            <img src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/6961ada9e4c07135f1a3ef1c_about-us-image-voicecloud-webflow-template.png" loading="eager" alt="MissFloss.ai dashboard" class="image cover-image responsive---mbl"/>
+                            <img src="about-mockup.svg" loading="eager" alt="MissFloss.ai dashboard" class="image cover-image responsive---mbl"/>
                         </div>
                         <div id="w-node-d86447d4-7a2d-dd7a-75cc-b38699dd21c0-dde637be" data-w-id="d86447d4-7a2d-dd7a-75cc-b38699dd21c0" style="opacity:0;filter:blur(8px)" class="inner-container _500px---mbl">
                             <div class="badge">
@@ -243,7 +249,7 @@
                                         </div>
                                     </div>
                                     <div class="mg-top-regular">
-                                        <img src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/681a4b76fb285eac12ce7b8f_natural-expressive-voices-techvoice-webflow-template.png" loading="eager" alt="Automated patient messaging" class="image z-index-1 feature"/>
+                                        <img src="feature-card.svg" loading="eager" alt="Automated patient messaging" class="image z-index-1 feature"/>
                                     </div>
                                     <div class="feature-v1-card-bg"></div>
                                 </div>
@@ -259,7 +265,7 @@
                                         </div>
                                     </div>
                                     <div class="mg-top-regular">
-                                        <img src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/693a0d4cb1706210b5effd87_multi-language-support-techvoice-webflow-template.png" loading="eager" alt="Treatment plan follow-ups" class="image z-index-1 feature-full"/>
+                                        <img src="feature-card.svg" loading="eager" alt="Treatment plan follow-ups" class="image z-index-1 feature-full"/>
                                     </div>
                                     <div class="feature-v1-card-bg _02"></div>
                                 </div>
@@ -274,12 +280,12 @@
                                     </div>
                                     <div class="flex-horizontal justify-start width-100">
                                         <div class="mg-top-regular width-100">
-                                            <img src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/681a4fe2fa8bd6433229b6b9_real-time-streaming-bg-techvoice-webflow-template.png" loading="eager" alt="Recall and reactivation" class="image z-index-1 feature-left"/>
+                                            <img src="feature-card.svg" loading="eager" alt="Recall and reactivation" class="image z-index-1 feature-left"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div data-w-id="df1de21e-a3c5-7e2c-319b-7fc9d66ae052" style="opacity:0;filter:blur(8px)" class="card features-card-v1">
-                                    <img src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/681a4fe13e5ce2277680ff1c_integrated-audio-tools-techvoice-webflow-template.png" loading="eager" alt="PMS integrations" class="image z-index-1 feature"/>
+                                    <img src="feature-card.svg" loading="eager" alt="PMS integrations" class="image z-index-1 feature"/>
                                     <div class="mg-top-2x-extra-small">
                                         <div class="feature-v1-card-top-content bottom">
                                             <h3 class="display-6">Works with your PMS</h3>
@@ -296,7 +302,7 @@
                                             <p>Encrypted at rest, encrypted in transit, BAA included. Built for healthcare from day one.</p>
                                         </div>
                                     </div>
-                                    <img src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/695d75a057e90de9f5eb9440_secure-and-scalable-techvoice-webflow-template.png" loading="eager" alt="HIPAA security" class="image z-index-1 feature"/>
+                                    <img src="feature-card.svg" loading="eager" alt="HIPAA security" class="image z-index-1 feature"/>
                                     <div class="feature-v1-card-bg _03"></div>
                                 </div>
                             </div>
@@ -389,17 +395,17 @@
                             <div id="w-node-_66fe86dd-ecf2-20aa-51af-e4d5a3eabcfd-dde637be" class="steps-section-tabs-content w-tab-content">
                                 <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
                                     <div class="image-wrapper border-image">
-                                        <img loading="eager" src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/681a549f08d703925bd7a8ce_integrate-and-customize-techvoice-webflow-template.jpg" alt="Connect your PMS" class="image cover-image responsive---mbl"/>
+                                        <img loading="eager" src="about-mockup.svg" alt="Connect your PMS" class="image cover-image responsive---mbl"/>
                                     </div>
                                 </div>
                                 <div data-w-tab="Tab 2" class="w-tab-pane">
                                     <div class="image-wrapper border-image">
-                                        <img loading="eager" src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/681a54a1727a1f14b6884b75_sign-up-and-configure-techvoice-webflow-template.jpg" alt="Train your practice voice" class="image cover-image responsive---mbl"/>
+                                        <img loading="eager" src="about-mockup.svg" alt="Train your practice voice" class="image cover-image responsive---mbl"/>
                                     </div>
                                 </div>
                                 <div data-w-tab="Tab 3" class="w-tab-pane">
                                     <div class="image-wrapper border-image">
-                                        <img loading="eager" src="https://cdn.prod.website-files.com/681522066d2314e4dde636e8/681a54a10cc7ee42ee081f6d_generate-and-deploy-techvoice-webflow-template.jpg" alt="Go live" class="image cover-image responsive---mbl"/>
+                                        <img loading="eager" src="about-mockup.svg" alt="Go live" class="image cover-image responsive---mbl"/>
                                     </div>
                                 </div>
                             </div>

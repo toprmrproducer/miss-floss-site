@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" role="img" aria-label="MissFloss.ai recall analytics dashboard">
+  <defs>
+    <radialGradient id="aGlow" cx="0.5" cy="0.1" r="0.7"><stop offset="0%" stop-color="#3B82F6" stop-opacity="0.18"/><stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="aBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0b0b0d"/><stop offset="100%" stop-color="#08080a"/></linearGradient>
+    <linearGradient id="lineFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3B82F6" stop-opacity="0.35"/><stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="800" rx="22" fill="url(#aBg)"/>
+
+  <!-- Top header -->
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <text x="48" y="64" font-size="22" font-weight="700" fill="#fff">Recall &amp; reactivation</text>
+    <text x="48" y="86" font-size="12" fill="#7a7a85">Last 30 days · Auto-managed by Miss Floss</text>
+  </g>
+
+  <!-- KPI strip -->
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <g transform="translate(48,120)"><rect width="260" height="110" rx="14" fill="#101013" stroke="#1c1c22"/>
+      <text x="20" y="28" font-size="11" fill="#7a7a85">Lapsed patients reached</text>
+      <text x="20" y="72" font-size="32" font-weight="700" fill="#fff">1,284</text>
+      <text x="20" y="94" font-size="10" fill="#10b981">↑ 2.4× vs human-only outreach</text>
+    </g>
+    <g transform="translate(324,120)"><rect width="260" height="110" rx="14" fill="#101013" stroke="#1c1c22"/>
+      <text x="20" y="28" font-size="11" fill="#7a7a85">Booked back in</text>
+      <text x="20" y="72" font-size="32" font-weight="700" fill="#fff">412</text>
+      <text x="84" y="72" font-size="14" fill="#3B82F6">/1,284</text>
+      <text x="20" y="94" font-size="10" fill="#10b981">32% conversion rate</text>
+    </g>
+    <g transform="translate(600,120)"><rect width="260" height="110" rx="14" fill="#101013" stroke="#1c1c22"/>
+      <text x="20" y="28" font-size="11" fill="#7a7a85">Recovered revenue</text>
+      <text x="20" y="72" font-size="32" font-weight="700" fill="#fff">$148,320</text>
+      <text x="20" y="94" font-size="10" fill="#10b981">Avg ticket $360</text>
+    </g>
+    <g transform="translate(876,120)"><rect width="356" height="110" rx="14" fill="#101013" stroke="#1c1c22"/>
+      <text x="20" y="28" font-size="11" fill="#7a7a85">Cost vs front-desk staff</text>
+      <text x="20" y="72" font-size="32" font-weight="700" fill="#fff">$3,200</text>
+      <text x="20" y="94" font-size="10" fill="#10b981">98% cheaper than the 1.5 FTE you avoided hiring</text>
+    </g>
+  </g>
+
+  <!-- Chart -->
+  <g transform="translate(48,260)" font-family="ui-sans-serif, system-ui, sans-serif">
+    <rect width="780" height="380" rx="14" fill="#101013" stroke="#1c1c22"/>
+    <text x="24" y="34" font-size="14" font-weight="600" fill="#fff">Daily reactivations</text>
+    <text x="24" y="52" font-size="11" fill="#7a7a85">Jun 1 — Jun 30</text>
+
+    <!-- gridlines -->
+    <g stroke="#1f1f26" stroke-dasharray="2 4">
+      <line x1="24" y1="120" x2="756" y2="120"/>
+      <line x1="24" y1="180" x2="756" y2="180"/>
+      <line x1="24" y1="240" x2="756" y2="240"/>
+      <line x1="24" y1="300" x2="756" y2="300"/>
+    </g>
+
+    <!-- line area -->
+    <path d="M24,290 L80,260 L140,275 L200,230 L260,240 L320,200 L380,210 L440,170 L500,180 L560,140 L620,150 L680,110 L740,120 L756,118 L756,340 L24,340 Z" fill="url(#lineFill)"/>
+    <path d="M24,290 L80,260 L140,275 L200,230 L260,240 L320,200 L380,210 L440,170 L500,180 L560,140 L620,150 L680,110 L740,120 L756,118" stroke="#3B82F6" stroke-width="2" fill="none"/>
+
+    <!-- points -->
+    <g fill="#3B82F6">
+      <circle cx="320" cy="200" r="3"/>
+      <circle cx="440" cy="170" r="3"/>
+      <circle cx="560" cy="140" r="3"/>
+      <circle cx="680" cy="110" r="3.5"/>
+      <circle cx="680" cy="110" r="7" fill="#3B82F6" fill-opacity="0.25"/>
+    </g>
+
+    <!-- x-axis labels -->
+    <g font-size="10" fill="#6b7280">
+      <text x="24" y="358">Jun 1</text>
+      <text x="200" y="358">Jun 8</text>
+      <text x="380" y="358">Jun 15</text>
+      <text x="560" y="358">Jun 22</text>
+      <text x="730" y="358" text-anchor="end">Jun 30</text>
+    </g>
+  </g>
+
+  <!-- Right column: Recall queue -->
+  <g transform="translate(848,260)" font-family="ui-sans-serif, system-ui, sans-serif">
+    <rect width="384" height="380" rx="14" fill="#101013" stroke="#1c1c22"/>
+    <text x="20" y="34" font-size="14" font-weight="600" fill="#fff">Recall queue · Live</text>
+    <text x="20" y="52" font-size="11" fill="#7a7a85">142 patients · Miss Floss working through it</text>
+
+    <g transform="translate(20,76)" font-size="11">
+      <g><rect width="344" height="56" rx="10" fill="#0a0a0c"/>
+        <circle cx="24" cy="28" r="14" fill="#3B82F6" fill-opacity="0.22"/>
+        <text x="24" y="32" text-anchor="middle" font-size="11" font-weight="700" fill="#3B82F6">MC</text>
+        <text x="48" y="22" font-size="12" font-weight="600" fill="#fff">Maria Chen</text>
+        <text x="48" y="38" fill="#7a7a85">Overdue hygiene · 8 mo</text>
+        <text x="328" y="22" text-anchor="end" font-size="10" fill="#10b981">● calling</text>
+        <text x="328" y="38" text-anchor="end" font-size="10" fill="#6b7280">2 attempts</text>
+      </g>
+      <g transform="translate(0,66)"><rect width="344" height="56" rx="10" fill="#0a0a0c"/>
+        <circle cx="24" cy="28" r="14" fill="#3B82F6" fill-opacity="0.22"/>
+        <text x="24" y="32" text-anchor="middle" font-size="11" font-weight="700" fill="#3B82F6">JP</text>
+        <text x="48" y="22" font-size="12" font-weight="600" fill="#fff">James Park</text>
+        <text x="48" y="38" fill="#7a7a85">Unscheduled treatment · $2,400</text>
+        <text x="328" y="22" text-anchor="end" font-size="10" fill="#10b981">● booked</text>
+        <text x="328" y="38" text-anchor="end" font-size="10" fill="#6b7280">Jul 12</text>
+      </g>
+      <g transform="translate(0,132)"><rect width="344" height="56" rx="10" fill="#0a0a0c"/>
+        <circle cx="24" cy="28" r="14" fill="#3B82F6" fill-opacity="0.22"/>
+        <text x="24" y="32" text-anchor="middle" font-size="11" font-weight="700" fill="#3B82F6">RD</text>
+        <text x="48" y="22" font-size="12" font-weight="600" fill="#fff">Robert Davis</text>
+        <text x="48" y="38" fill="#7a7a85">Implant follow-up</text>
+        <text x="328" y="22" text-anchor="end" font-size="10" fill="#fbbf24">● voicemail</text>
+        <text x="328" y="38" text-anchor="end" font-size="10" fill="#6b7280">Retry tomorrow</text>
+      </g>
+      <g transform="translate(0,198)"><rect width="344" height="56" rx="10" fill="#0a0a0c"/>
+        <circle cx="24" cy="28" r="14" fill="#3B82F6" fill-opacity="0.22"/>
+        <text x="24" y="32" text-anchor="middle" font-size="11" font-weight="700" fill="#3B82F6">EW</text>
+        <text x="48" y="22" font-size="12" font-weight="600" fill="#fff">Emma Wilson</text>
+        <text x="48" y="38" fill="#7a7a85">Overdue cleaning · 6 mo</text>
+        <text x="328" y="22" text-anchor="end" font-size="10" fill="#10b981">● booked</text>
+        <text x="328" y="38" text-anchor="end" font-size="10" fill="#6b7280">Jun 18</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="0" y="0" width="1280" height="800" fill="url(#aGlow)"/>
+  <rect x="0" y="0" width="1280" height="800" rx="22" fill="none" stroke="#1c1c22" stroke-width="1"/>
+</svg>
